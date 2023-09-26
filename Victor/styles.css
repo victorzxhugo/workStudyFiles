@@ -1,0 +1,8 @@
+h1 {
+    padding: 20px;
+}
+
+h1.dark{
+    color:white;
+    background-color: black;
+}

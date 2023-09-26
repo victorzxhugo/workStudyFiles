@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    font-family: Impact;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    align-content: center;
+    padding: 5px;
+    background-color: aqua;
+    margin: 0px;
+    border: 5px;
+}
+
+h2.firstTitle{
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+h2.secondTitle{
+    text-align: right;
+    color:red;
+    text-decoration: underline;
+
+}
+.p1{
+    text-align: justify;
+}

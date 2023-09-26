@@ -1,0 +1,14 @@
+Variáveis 
+
+var = 1;  -Escopo da função e mutável
+let = 1;  -Escopo em bloco e mutável
+const = 1; - Escopo em bloco e imutável
+
+
+
+============
+
+adiiconar na lista = lista.push()
+remover ultimo =     lista.pop()
+tamanho da lista =   lista.length
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de usuários</title>
+</head>
+<body>
+    <div class = "content">
+        <h1>Cadastro de usuários</h1> 
+            <form id="userForm">
+                <div>
+                    <input type="text" placeholder="Digite seu nome" id="nome" class="inputs">
+                    <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                </div> 
+                    
+                <div>
+                    <input type="text" placeholder="Digite seu email" id="email" class="inputs">
+                    <span class="span-required">Digite um email válido</span>
+                </div>
+                <div>
+                    <input type="password" placeholder="Digite sua senha" id="senha" class="inputs">
+                    <span class="span-required">Senha deve ter no mínimo 3 caracteres</span>         
+                </div>
+                <div>    
+                    <input type="password" placeholder="Repita sua senha" id="senhaRepete" class="inputs">
+                    <span class="span-required">Senha deve ser igual a anterior</span>         
+                </div>
+                    <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Escreva uma descrição..." class="inputs"></textarea>
+                    
+                    <p>Sexo:</p>
+                <div class="box-select">
+                    
+                    <div>
+                        <input type="radio" name="sexo" id="Masculino">
+                        <label for="Masculino">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="Feminino">
+                        <label for="Feminino">Feminino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="Outro">
+                        <label for="Outro">Outro</label>
+                    </div>  
+                </div>
+                
+                <p>Quais tecnologias você domina?</p>
+                
+                <div class="box-select">
+                    <div>
+                        <input type="checkbox" name="tecnologias" id="python">
+                        <label for="python">Python</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tecnologias" id="java">
+                        <label for="java">Java</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tecnologias" id="js">
+                        <label for="js">JavaScript</label>
+                    </div>
+                </div>
+                
+                <div>
+                <table id="table-users" class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Sexo</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+                </table>
+                </div>
+                
+                
+                <button type ="submit" >Enviar</button>
+            </form>    
+    </div>
+    <script src="service.js"></script>
+
+</body>
+</html>
